@@ -55,26 +55,28 @@ body {
 }
 
 .entry {
-  background: rgba(59, 74, 107, 0.4);
+  background: rgb(210 210 210 / 40%);
+  padding: 24px 12px;
+  border-radius: 8px;
 }
 
-#entryHolder {
+.entryHolder {
+  font-size: 14px;
 }
 
-#date {
-}
-
-#temp {
-}
-
-#content {
-}
-
-.title {
+.error {
+  color: red;
+  font-size: 14px;
+  margin-top: 2px;
 }
 
 .holder {
   margin-bottom: 20px;
+}
+
+.title {
+  font-weight: 700;
+  margin-bottom: 16px;
 }
 
 /*  Basic Styling To Override Default For Basic HTML Elements */
@@ -102,11 +104,12 @@ textarea {
   outline: none;
   padding: 8px;
   min-height: 24px;
+  border-radius: 4px;
 }
 
 input:focus,
 textarea:focus {
-  border: 1px solid #f96332;
+  border: 1px solid #333;
 }
 
 button {

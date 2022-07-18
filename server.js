@@ -21,11 +21,16 @@ app.use(cors());
 // Initialize the main project folder
 app.use(express.static('src'));
 
-// Setup Server
-app.get('/test', (req, res) => {
+app.get('/recent', (req, res) => {
   res.send(projectData);
 });
 
+app.post('/storage', async (req, res) => {
+  projectData = req.body ?? '';
+  res.send(projectData);
+});
+
+// Setup Server
 app.listen(port, () => {
   console.log(`Now app is running on http://localhost:${port}`);
 });
