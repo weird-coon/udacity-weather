@@ -1,0 +1,17 @@
+{
+  "name": "udacity-weather",
+  "version": "1.0.0",
+  "description": "An asynchronous web app that uses Web API and user data to dynamically update the UI for a Weather-Journal App",
+  "main": "index.js",
+  "repository": "git@github.com:weird-coon/udacity-weather.git",
+  "author": "Quyen Luu <luqu0501@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "cors": "^2.8.5",
+    "express": "^4.18.1"
+  }
+}

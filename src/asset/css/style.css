@@ -1,0 +1,135 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #fffff8;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+#app {
+  background: url(../img/weather.jpg);
+  position: absolute;
+  background-size: cover;
+  background-position: 50%;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#app::before {
+  content: '';
+  background: linear-gradient(
+    0deg,
+    rgba(44, 44, 44, 0.2),
+    rgba(224, 23, 3, 0.6)
+  );
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 32px 20px;
+  box-shadow: 0 20px 50px 0 rgb(0 0 0 / 30%);
+}
+
+.headline {
+  margin-bottom: 32px;
+  font-family: serif;
+  font-size: 32px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.entry {
+  background: rgba(59, 74, 107, 0.4);
+}
+
+#entryHolder {
+}
+
+#date {
+}
+
+#temp {
+}
+
+#content {
+}
+
+.title {
+}
+
+.holder {
+  margin-bottom: 20px;
+}
+
+/*  Basic Styling To Override Default For Basic HTML Elements */
+label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 2px;
+  font-weight: 700;
+}
+
+input,
+textarea {
+  display: block;
+  font-size: 14px;
+  width: 100%;
+  background-color: transparent;
+  border: 1px solid #e3e3e3;
+  color: #2c2c2c;
+  height: auto;
+  line-height: normal;
+  font-size: 0.8571em;
+  transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out,
+    background-color 0.3s ease-in-out;
+  box-shadow: none;
+  outline: none;
+  padding: 8px;
+  min-height: 24px;
+}
+
+input:focus,
+textarea:focus {
+  border: 1px solid #f96332;
+}
+
+button {
+  background-color: #f96332;
+  color: #fff;
+  font-weight: 400;
+  line-height: 1.35em;
+  margin: 32px auto 12px;
+  border: none;
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  border-width: 1px;
+  border-radius: 30px;
+  font-size: 1em;
+  padding: 8px 48px;
+  transition: all 0.15s ease 0s;
+}
+
+button:hover {
+  background-color: #fa7a50;
+}
+
+h1 {
+  font-size: 36px;
+}
